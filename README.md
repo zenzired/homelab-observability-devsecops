@@ -12,6 +12,18 @@ Workloads are physically isolated across dedicated boards to eliminate single-bo
 
 ---
 
+## Detailed Documentation
+
+| Guide | Scope |
+| :--- | :--- |
+| [01. Implementation Runbook](docs/01-implementation-runbook.md) | Step-by-step setup across `microk8sMaster`, `aiagent-n8n`, `pizero-pihole`, and `ubuntu-Host` |
+| [02. Edge DNS & Host Metrics](docs/02-edge-dns-and-host-metrics.md) | Pi Zero W `systemd` exporters, `linux_armv6` binary setup, and Pi-hole v6 metrics |
+| [03. Centralized Observability Stack](docs/03-centralized-observability-stack.md) | Docker Compose, SQLite WAL tuning, UID `472:472` storage, and Open-Meteo Infinity API |
+| [04. Troubleshooting Log & Root-Cause Resolutions](docs/04-troubleshooting-log.md) | Complete log of all 10 infrastructure, storage, network, and Git issues resolved |
+| [05. Key Architectural Takeaways](docs/05-architectural-takeaways.md) | Engineering principles for reliable single-board Kubernetes & observability labs |
+
+---
+
 ## Architecture Topology
 
 ```mermaid
